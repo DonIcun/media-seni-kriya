@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ivCara"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/m0"
+        android:scaleType="fitXY"
+        />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/judulCara"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="32sp"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:padding="30dp"-->
+        <!--android:layout_below="@id/ivCara"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Menu Kurikulum"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/isiCara"-->
+        <!--android:padding="15dp"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="pada menu kurikulum ini berisi tentang kurikulum yang di gunakan dalam menyusun media ini"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--/>-->
+</RelativeLayout>

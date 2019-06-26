@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:background="#f5f5f6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageCard_materi"
+                android:src="@drawable/mpengertian"/>
+
+            <TextView
+                android:id="@+id/judul_materi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageCard_materi"
+                android:text="Peralatan Membbuat Keramik"
+                android:textSize="18sp"
+                android:textAlignment="textEnd"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                />
+
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

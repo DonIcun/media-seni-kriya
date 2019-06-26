@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuItem1"
+            android:icon="@drawable/ic_kurikulum"
+            android:title="Kurikulum 2013" />
+
+        <item
+            android:id="@+id/menuItem2"
+            android:icon="@drawable/ic_kompetensi"
+            android:title="Kompetensi" />
+
+        <item
+            android:id="@+id/menuItem3"
+            android:icon="@drawable/ic_materi"
+            android:title="Materi" />
+
+        <item
+            android:id="@+id/menuItem4"
+            android:icon="@drawable/ic_latihan"
+            android:title="Latihan Soal" />
+
+        <item
+            android:id="@+id/menuItem5"
+            android:icon="@drawable/ic_tentang"
+            android:title="Tentang" />
+
+        <item
+            android:id="@+id/menuItem6"
+            android:icon="@drawable/ic_credit"
+            android:title="Credit" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/menuItem7"
+                android:icon="@drawable/ic_keluar"
+                android:title="Keluar" />
+
+        </menu>
+    </item>
+</menu>

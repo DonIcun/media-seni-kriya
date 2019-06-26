@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="android.emot.com.mediasenikriya.Main2Activity"
+    android:background="@color/primaryColorblueLight"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/Teksviewmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media Pembelajaran Keramik"
+        android:textSize="26sp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="@dimen/margintext_top"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@id/viewPager"
+        />
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/btPilih"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="160dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_below="@+id/teksviewmain2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:srcCompat="@drawable/popupnilai" />-->
+
+    <TextView
+        android:id="@+id/teksviewmain2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Teksviewmain"
+        android:layout_margin="10dp"
+        android:text="untuk melihat petunjuk penggunaan klik tombol di bawah"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="20dp" />
+    <ImageView
+        android:id="@+id/imageViewmascot"
+        android:layout_width="102dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/mascot" />
+    <Button
+        android:id="@+id/btPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageViewmascot"
+        android:layout_centerHorizontal="true"
+        android:text="Petunjuk Penggunaan"
+        android:textSize="18sp"
+        android:textColor="@color/primaryTextColor"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:layout_margin="5dp"
+        />
+
+
+</RelativeLayout>

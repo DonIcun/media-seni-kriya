@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpolkadot">
+
+    <TextView
+        android:id="@+id/statusskor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="LUAR BIASA!"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"/>
+
+    <RelativeLayout
+        android:layout_width="225dp"
+        android:layout_height="175dp"
+        android:background="@color/bgWhiteColor"
+        android:id="@+id/relativeLayoutskor"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tekskor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="Skor"
+            android:textColor="@color/primaryColorblueLight"
+            android:textSize="20pt"/>
+
+        <TextView
+        android:id="@+id/finalskor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+            android:layout_below="@+id/tekskor"
+            android:layout_margin="5dp"
+        android:text="40"
+        android:textColor="@color/primaryColorblueLight"
+        android:textSize="30pt"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivgbskor"
+        android:layout_width="175dp"
+        android:layout_height="110dp"
+        android:layout_above="@id/relativeLayoutskor"
+        android:layout_centerInParent="true"
+        android:src="@drawable/popup1"
+        />
+    <Button
+        android:id="@+id/buttonreplay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn01"
+        android:layout_below="@+id/relativeLayoutskor"
+        android:layout_alignStart="@+id/relativeLayoutskor"
+        android:layout_marginTop="30dp" />
+    <Button
+        android:id="@+id/buttoncenilai"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn02"
+        android:layout_below="@+id/relativeLayoutskor"
+        android:layout_alignEnd="@+id/relativeLayoutskor"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBarmateri"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:id="@+id/scrlview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/webviewmateriConten1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+    </LinearLayout>
+</ScrollView>
+<!--<Button-->
+    <!--android:id="@+id/backmenu"-->
+    <!--android:layout_width="150dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:text="Kembali"-->
+    <!--android:textStyle="bold"-->
+    <!--android:layout_below="@id/scrlview"-->
+    <!--android:textColor="@color/primaryTextColor"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:background="@drawable/button"/>-->
+</RelativeLayout>

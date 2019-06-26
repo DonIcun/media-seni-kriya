@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/primaryColorblue"></item>
+    <item
+        android:gravity="center"
+        android:width="250dp"
+        android:height="250dp">
+        <bitmap
+            android:gravity="fill_horizontal|fill_vertical"
+            android:src="@mipmap/splashlogo_gold"/>
+    </item>
+
+</layer-list>
