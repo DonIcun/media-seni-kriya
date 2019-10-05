@@ -2,6 +2,7 @@ package android.emot.com.mediasenikriya;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -26,6 +27,7 @@ public class KompetensiFragment extends Fragment {
     WebView isikompetensi;
     ProgressBar progressBar;
     String tekskompetensi;
+    TextView tvJudulKompetensi;
 
     @Nullable
     @Override
@@ -46,6 +48,13 @@ public class KompetensiFragment extends Fragment {
                 "<b>3.\tKompetensi Dasar</b>\n" +
                 "\ta)\tMemahami pengetahuan tentang jenis, sifat, karakter dan teknik pengolahan bahan lunak (tanah liat, getah, lilin, clay polimer, clay tepung, plastisin, parafin, gips dan lain-lain)\n";
 */
+        Typeface tfjudul = Typeface.createFromAsset(getActivity().getAssets(),"fonts/TrajanPro-Bold.otf");
+
+        tvJudulKompetensi = view.findViewById(R.id.judulteksKompetensi);
+        tvJudulKompetensi.setTypeface(tfjudul);
+        tvJudulKompetensi.setTextColor(getResources().getColor(R.color.colorBlack));
+
+
         //isikompetensi.loadDataWithBaseURL(null,tekskompetensi,"teks/html","utf-8",null);
         isikompetensi.loadUrl("file:///android_asset/kompetensi.html");
         isikompetensi.getSettings().setJavaScriptEnabled(true);

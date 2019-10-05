@@ -10,20 +10,21 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
 
-    <ScrollView
-        android:id="@+id/scrlview"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
+    <WebView
+        android:id="@+id/webviewmateriConten1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <WebView
-            android:id="@+id/webviewmateriConten1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></WebView>
-    </LinearLayout>
-</ScrollView>
+        android:layout_height="wrap_content"></WebView>
+    <!--<ScrollView-->
+        <!--android:id="@+id/scrlview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+    <!--</LinearLayout>-->
+<!--</ScrollView>-->
 <!--<Button-->
     <!--android:id="@+id/backmenu"-->
     <!--android:layout_width="150dp"-->

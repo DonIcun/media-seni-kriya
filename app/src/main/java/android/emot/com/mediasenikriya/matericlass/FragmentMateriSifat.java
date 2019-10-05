@@ -31,7 +31,9 @@ public class FragmentMateriSifat extends Fragment {
         //      progressBar.setMax(100);
 
         WebSettings webSettings = webView.getSettings();
-        webSettings.setBuiltInZoomControls(false);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(true);
+        webSettings.setSupportZoom(true);
         webSettings.setJavaScriptEnabled(true);
 
         webView.setWebViewClient(new WebViewClient());

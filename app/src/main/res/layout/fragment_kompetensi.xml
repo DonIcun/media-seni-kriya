@@ -5,14 +5,14 @@
     >
 
     <TextView
-        android:id="@+id/judulteks"
+        android:id="@+id/judulteksKompetensi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kompetensi"
         android:textStyle="bold"
         android:textSize="36sp"
         android:textAlignment="center"
-        android:textColor="@color/secondaryTextColor"
+        android:textColor="@color/colorBlack"
         android:layout_margin="@dimen/margintext_top"
         android:layout_alignParentTop="true"/>
     <ProgressBar
@@ -27,8 +27,8 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/margintext_top"
         android:layout_marginRight="@dimen/margintext_top"
-        android:layout_below="@+id/judulteks"
-        android:layout_alignStart="@+id/judulteks"
+        android:layout_below="@id/judulteksKompetensi"
+        android:layout_alignStart="@id/judulteksKompetensi"
         >
 
         <WebView

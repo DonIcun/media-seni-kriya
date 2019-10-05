@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    android:background="#f5f5f6"
+    android:id="@+id/parent_btvideo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgWhiteColor">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:id="@+id/imageCard_video"
+            android:src="@drawable/ic_play_circle_filled_black_24dp"/>
+
+        <TextView
+            android:id="@+id/judul_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageCard_video"
+            android:text="1. Peralatan Membuat Keramik"
+            android:singleLine="true"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

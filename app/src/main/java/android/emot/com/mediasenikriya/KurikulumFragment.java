@@ -26,6 +26,7 @@ import java.io.InputStream;
 
 public class KurikulumFragment extends Fragment {
 
+    TextView tvJudulKurikulum;
     WebView isikurikulum;
     ProgressBar progressBar;
     String teksKurikulum;
@@ -37,17 +38,18 @@ public class KurikulumFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_kurikulum, container, false);
 
        isikurikulum = view.findViewById(R.id.webviewKuriklum);
+       tvJudulKurikulum = view.findViewById(R.id.judulteksKurikulum);
        progressBar = view.findViewById(R.id.progressBarKurikulum);
        progressBar.setMax(100);
 
 /*        teksKurikulum = "\tDalam prespektif kebijakan pendidikan nasional sebagaimana dilihat dalam Undang-Undang Sistem Pendidikan " +
                 "Nasional No.20 Tahun 2003 menyatakan bahwa: “Kurikulum adalah seperangkat rencana dan pengaturan mengenai tujuan, isi, dan bahan pelajaran serta cara yang digunakan sebagai pedoman penyelenggaran pembelajaran untuk mencapai tujuan pendidikan tertentu”." +
                 "\n\tKurikulum 2013 ada karena ada sebuah kegelisahan dalam sistem pendidikan yang diterapkan yang hanya berbasis pada pemenuhan pengetahuan siswa. Kurikulum 2013 memadukan  tiga konsep yang menyeimbangkan sikap, pengetahuan, dan keterampilan. Kurikulum 2013 menenkankan pada dimensi pedagogik modern dalam pembelajaran, yaitu menggunakan pendekatan ilmiah (scientific approach) dalam pembelajaran sebagaimana dimaksud meliputi  mengamati, menalar, mencoba, dan membentuk jaring-jaring untuk semua pembelajaraan.\n";
+*/
 
-
-        isikurikulum.setText(teksKurikulum);
-        Typeface typeface = Typeface.createFromAsset(getContext().getApplicationContext().getAssets(),"fonts/TrajanPro-Regular");
-        isikurikulum.setTypeface(typeface);*/
+        Typeface tfjudul = Typeface.createFromAsset(getActivity().getAssets(),"fonts/TrajanPro-Bold.otf");
+        tvJudulKurikulum.setTypeface(tfjudul);
+        tvJudulKurikulum.setTextColor(getResources().getColor(R.color.colorBlack));
 
 //       teksKurikulum = getContext().getResources().getString(R.string.isitekskurikulum);
 //        isikurikulum.loadDataWithBaseURL(null,teksKurikulum,"teks/html","utf-8",null);

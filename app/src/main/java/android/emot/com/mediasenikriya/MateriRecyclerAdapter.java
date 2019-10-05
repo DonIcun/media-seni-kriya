@@ -40,9 +40,6 @@ public class MateriRecyclerAdapter extends RecyclerView.Adapter<MateriRecyclerAd
             type = Typeface.createFromAsset(itemView.getContext().getAssets(),"fonts/TrajanPro-Bold.otf");
             mJudulMateri.setTypeface(type);
             mJudulMateri.setTextColor(itemView.getResources().getColor(R.color.colorBlack));
-
-
-
             itemView.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View view) {
@@ -60,8 +57,6 @@ public class MateriRecyclerAdapter extends RecyclerView.Adapter<MateriRecyclerAd
 
     public MateriRecyclerAdapter(ArrayList<ItemMateri> itemMateris){
         mItemMateri = itemMateris;
-
-
     }
 
     @Override

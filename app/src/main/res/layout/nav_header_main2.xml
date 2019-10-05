@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:textColor="@color/secondaryTextColor"
-        android:text="Author: Ghiffari Raka Ikhsan" />
+        android:text="Author: Ghiffari Raka Ikhsan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
 </LinearLayout>

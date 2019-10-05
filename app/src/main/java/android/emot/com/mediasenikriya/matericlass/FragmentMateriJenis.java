@@ -34,7 +34,9 @@ public class FragmentMateriJenis extends Fragment {
 
         webView.loadUrl("file:///android_asset/materijenistanah.html");
         WebSettings webSettings = webView.getSettings();
-        webSettings.setBuiltInZoomControls(false);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(true);
+        webSettings.setSupportZoom(true);
         webSettings.setJavaScriptEnabled(true);
 
         webView.setWebViewClient(new WebViewClient());

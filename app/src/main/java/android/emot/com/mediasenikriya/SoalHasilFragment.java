@@ -35,7 +35,7 @@ public class SoalHasilFragment extends Fragment {
         sskor = view.findViewById(R.id.statusskor);
         fskor = view.findViewById(R.id.finalskor);
         ivskor = view.findViewById(R.id.ivgbskor);
-        tskor = view.findViewById(R.id.tekskor);
+//        tskor = view.findViewById(R.id.tekskor);
         soalulang = view.findViewById(R.id.buttonreplay);
         cekhasil = view.findViewById(R.id.buttoncenilai);
         Typeface type = Typeface.createFromAsset (getActivity().getAssets(),"fonts/COOPBL.TTF");
@@ -48,17 +48,17 @@ public class SoalHasilFragment extends Fragment {
         fskor.setTypeface(type);
         fskor.setText(skorvalue);
         sskor.setTypeface(type);
-        tskor.setTypeface(type);
-        if (tempskor > 90) {
-            sskor.setText("Luar Biasa!");
-            ivskor.setImageResource(R.drawable.popup1);
+//        tskor.setTypeface(type);
+        if (tempskor > 85) {
+//            sskor.setText("Menakjubkan!");
+            ivskor.setImageResource(R.drawable.popup3);
         }else if (tempskor > 70 ){
-            sskor.setText("Hebat!");
+//            sskor.setText("Hebat!");
             ivskor.setImageResource(R.drawable.popup2);
         }else {
-            sskor.setText("Coba Lagi");
+//            sskor.setText("Coba Lagi");
 //            sskor.setText(arrayList.get(0));
-            ivskor.setImageResource(R.drawable.popup3);
+            ivskor.setImageResource(R.drawable.popup1);
         }
 
         soalulang.setOnClickListener(new View.OnClickListener() {
@@ -80,9 +80,6 @@ public class SoalHasilFragment extends Fragment {
                         .commit();
             }
         });
-
-
-
 
         return view;
     }

@@ -49,7 +49,7 @@ public class MateriFragment extends Fragment {
         itemMateriArrayList.add(new ItemMateri(R.drawable.malat,"Peralatan Membuat Keramik"));
         itemMateriArrayList.add(new ItemMateri(R.drawable.mpembuatan,"Pembuatan Keramik"));
         itemMateriArrayList.add(new ItemMateri(R.drawable.mpengembangan,"Pengembangan Teknik Pembuatan Keramik"));
-
+        itemMateriArrayList.add(new ItemMateri(R.drawable.mvideo,"Video"));
 
         Typeface tfmenu = Typeface.createFromAsset(getActivity().getAssets(),"fonts/TrajanPro-Bold.otf");
 
@@ -100,6 +100,10 @@ public class MateriFragment extends Fragment {
                     case 7:
                         getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,
                                 new FragmentMateriPengembangan()).addToBackStack(null).commit();
+                        break;
+                    case 8:
+                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_container,
+                                new VideoFragment()).addToBackStack(null).commit();
                         break;
                 }
             }

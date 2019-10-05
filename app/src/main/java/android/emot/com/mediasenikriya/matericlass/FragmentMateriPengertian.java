@@ -34,7 +34,9 @@ public class FragmentMateriPengertian extends Fragment {
         progressBar.setMax(100);
 
         WebSettings webSettings = webView.getSettings();
-        webSettings.setBuiltInZoomControls(false);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(true);
+        webSettings.setSupportZoom(true);
         webSettings.setJavaScriptEnabled(true);
 
         webView.loadUrl("file:///android_asset/materikonten.html");

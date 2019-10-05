@@ -27,7 +27,9 @@ public class FragmentMateriTeknik extends Fragment {
         webView = view.findViewById(R.id.webviewmateriConten1);
 
         WebSettings webSettings = webView.getSettings();
-        webSettings.setBuiltInZoomControls(false);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(true);
+        webSettings.setSupportZoom(true);
         webSettings.setJavaScriptEnabled(true);
 
         webView.setWebViewClient(new WebViewClient());
